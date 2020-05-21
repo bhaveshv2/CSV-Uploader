@@ -1,0 +1,18 @@
+<div class="container border border-dark" style="background-color: lightgray;width: 50%; height: 50%;margin-top: 20%;">
+    <h1 class="card-title mt-5" style="text-align: center;color: white;">CSV Uploader</h1>
+
+    <div class="container-fluid form-group" style="margin-top: 80px;"> 
+        <form action="/files/upload" method="POST" enctype="multipart/form-data" class="m-3">
+            <input type="file" name="csvfile" placeholder="Upload the .csv file" accept=".csv, text/csv" class="form-control-file">
+            <input type="submit" value="Upload" class="btn btn-primary m-3 form-control" style="margin-top: 10px;">
+        </form>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="/files/show-all" class="btn btn-outline-success">View all files</a>
+    </div>
+
+    <% if(locals.message) { %>
+        <p><%=message%></p>
+    <% } %>
+</div>

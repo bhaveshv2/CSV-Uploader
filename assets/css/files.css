@@ -1,0 +1,10 @@
+.files{
+    width:50%; 
+    height: auto; 
+    text-align: center;
+    background-color: lightgray;
+    padding: 30px;
+    position: relative;
+    left: 25%;
+    margin-top: 20%;
+}

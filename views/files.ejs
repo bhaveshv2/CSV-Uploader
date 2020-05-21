@@ -1,0 +1,12 @@
+<div class="card border border-dark files" >
+    <h1 class="card-title">All Files</h1>
+    <div id="file-container" class="card-body">
+        <% if(files){%>
+            <div id="file" class="card-text">
+            <% for(file of files){%>
+                <p><a href="/files/<%=file.id%>/show-file-content" class="btn btn-info"><%=file.name%></a></p>
+            <%}%>
+            </div>
+        <%}%>
+    </div>
+</div>
